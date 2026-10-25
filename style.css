@@ -61,25 +61,63 @@ button {
   color: #dbbebb;
 }
 
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .calculator {
+    width: 90%;
+    max-width: 480px;
+    padding: 26px;
+  }
+
+  .calculator div {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  input {
+    width: 100%;
+    margin: 0 0 12px 0;
+    padding: 26px;
+    font-size: 50px;
+  }
+
+  button {
+    flex: 1;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    font-size: 26px;
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 600px) {
   .calculator {
     width: 92%;
     padding: 14px;
-    border-radius: 14px;
   }
- 
+
   .calculator div {
+    display: flex;
     gap: 8px;
     margin-bottom: 8px;
   }
- 
+
   input {
+    width: 100%;
+    margin: 0 0 8px 0;
     padding: 14px;
-    margin-bottom: 8px;
     font-size: 30px;
   }
- 
+
   button {
+    flex: 1;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0;
     font-size: 18px;
   }
 }
